@@ -8,7 +8,7 @@ Repository Content
 
 •	kitti_to_yolo_v1.py - Convert Kitti label files to Yolo format.<br />
 •	Extract Predicted values.py - Extract Predicted values by feeding the neural network the images from KITTI dataset.<br />
-•	Evaluation Code.py - Code to calculate IoU and Average Precision.<br />    
+•	Evaluation Code.py - Code to calculate IoU and Average Precision.<br /> 
 •	Images Folder - Images from results obtained.
  
 ## Abstract
