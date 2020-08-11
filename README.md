@@ -6,10 +6,10 @@ Yolov3 Evaluation on KITTI dataset
 
 Repository Content
 
-•	kitti_to_yolo_v1.py - Convert Kitti label files to Yolo format.
-•	Extract Predicted values.py - Extract Predicted values by feeding the neural network the images from KITTI dataset.
-•	Evaluation Code.py - Code to calculate IoU and Average Precision.    
-•	Images Folder - Images from results obtained. 
+•	kitti_to_yolo_v1.py - Convert Kitti label files to Yolo format.<br />
+•	Extract Predicted values.py - Extract Predicted values by feeding the neural network the images from KITTI dataset.<br />
+•	Evaluation Code.py - Code to calculate IoU and Average Precision.<br />    
+•	Images Folder - Images from results obtained.
  
 ## Abstract
 Object detection is one of the most vital components in the Automotive sector. It can be used for various applications like Automotive safety, Autonomous driving and so on. Hence, various object detecting models have been developed over the years. One such model is the YOLOv3 which has been developed using the concepts of neural network and deep learning. But once this model is developed, it cannot be directly used in real life applications. The model needs to be evaluated by feeding it datasets containing images with known objects and check the accuracy of detection.  In this project we are trying to evaluate the convolutional neural network YOLOv3 object detector pre trained on COCO dataset. We are trying calculate the precision with which the pre trained YOLOv3 model can detect objects when a completely new dataset is provided to it.  Therefore, this evaluation is done using KITTI dataset for three classes of objects namely Cars, Pedestrians and Trucks. The evaluation is carried out on PyCharm using Python and OpenCV library
@@ -23,9 +23,9 @@ Object detection is one of the most vital components in the Automotive sector. I
 YOLO stands for You Only Live Once, it is a convolutional neural network which is used to detect objects in an image. YOLO network has 24 convolutional layers and 2 fully connected layers. It is much faster than a Fast R-CNN (Joseph Redmon, 2016). YOLOv3 is the third improvised version of YOLO neural network which is pre-trained on COCO Dataset and has more convolutional layers for faster detection (Farhadi, 2018).
 
 ## KITTI DATASET Contents
-From KITTI dataset, 1500 training images and the corresponding label files have been used.
-•	KITTI dataset contains 8 different classes which are Car, Van, Truck, Pedestrian, Person sitting, Cyclist, Tram, Misc. and DontCare.
-•	Each of these images contains its corresponding label files (.txt format) which are nothing but ground truth values.
+From KITTI dataset, 1500 training images and the corresponding label files have been used.<br />
+•	KITTI dataset contains 8 different classes which are Car, Van, Truck, Pedestrian, Person sitting, Cyclist, Tram, Misc. and DontCare.<br />
+•	Each of these images contains its corresponding label files (.txt format) which are nothing but ground truth values.<br />
 •	Each label file consists information of different objects that are present in the image. Class, Truncation, Occlusion, Observation angle, 2D bounding box boundary, 3D bounding box dimension, 3D bounding box coordinates and the Rotation value of the box are information given of each object.
 
 ## Evaluation Method
