@@ -27,7 +27,9 @@ Average precision can be calculated using the following method.
 
 Intersection over union is based on Jaccard Index. Here, we require both predicted bounding box and ground truth box, intersection over union of the area of both these boxes are calculated. This ratio is nothing but Intersection over Union or IoU. Once we calculate the IoU we proceed to understand whether the detection is valid or not by calculating/assigning True Positives or False Positives with respect to the IoU. If IoU is greater than a certain set threshold then the detection is True Positive else it is False Positive. In the first figure given below there is a small amount of intersection between the Red Box (Ground truth) and Blue Box (Predicted Box) hence the IoU is greater than 0. In the send figure the IoU is equal to 0 as there is no area of intersection. In the third figure there the ground truth box is completely intersected in the predicted  box but as we take the ratio, IoU is greater than 0 but less than 1. Hence, even if there is an intersection as given in third figure, the IoU still needs to be greater than the threshold and such intersection may still not be considered true positive.    
  
-ADD IMAGE
+<img src="images/Truck_AP.png">
+
+<br />
 
 Once the no. of True positive’s and False positives are found out, Precision and Recall have to be calculated.
 
@@ -137,6 +139,28 @@ Car   		 | 60.21       	    	| 4035                		 | 3056      				  | 5583  
 Pedestrian   | 27.68				| 338                		 | 443     					  | 893                      	 |781				   |
 Truck   	 | 9.87                	| 68	                	 | 608       				  | 215							 |676				   |
 
+### Precision v/s Recall Curves
+
+**Car Average Precision**	
+
+<img src="images/CAR_AP.png"> 
+
+<br />
+
+**Pedestrian Average Precision**
+
+<img src="images/Pedestrian_AP.png">
 	
-	
+<br />
+
+**Truck Average Precision**
+
+<img src="images/Truck_AP.png">
+
+<br />
+
+## Conclusion
+
+If we look at the results closely the Average Precision values apart from that of the Car class are very low for both Truck and Pedestrians. Hence, this evaluation was conducted for only three classes as the Average Precision values for the rest of the classes of KITTI dataset were quite negligible. The YOLOv3 model trained on COCO dataset but when chosen to evaluate on KITTI dataset does well in recognising Car objects but falters with other class of objects. We have evaluated the model on IoU method, but there are many different methods like Centre point Comparison method which may have given different results. Looking at the KITTI leader board we see that there are better models which detect Cars, Pedestrians and Trucks with better results than YOLOv3 (Urtasun, 2012). Hence, we can say the object detector needs to be probably trained well and also the evaluation algorithm could be improvised for better evaluation results. Because in the current situation using this model in real life applications for detection of objects like Cars, Pedestrians, Truck etc would not be the best idea.
+
 
