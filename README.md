@@ -24,7 +24,7 @@ YOLO stands for You Only Live Once, it is a convolutional neural network which i
 
 ## KITTI DATASET Contents
 From KITTI dataset, 1500 training images and the corresponding label files have been used.<br />
-•	KITTI dataset contains 8 different classes which are Car, Van, Truck, Pedestrian, Person sitting, Cyclist, Tram, Misc. and DontCare.<br />
+•	KITTI dataset contains 8 different classes which are Car, Van, Truck, Pedestrian, Person sitting, Cyclist, Tram, Misc and DontCare.<br />
 •	Each of these images contains its corresponding label files (.txt format) which are nothing but ground truth values.<br />
 •	Each label file consists information of different objects that are present in the image. Class, Truncation, Occlusion, Observation angle, 2D bounding box boundary, 3D bounding box dimension, 3D bounding box coordinates and the Rotation value of the box are information given of each object.
 
