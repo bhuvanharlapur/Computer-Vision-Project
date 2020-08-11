@@ -6,10 +6,10 @@ Yolov3 Evaluation on KITTI dataset
 
 Repository Content
 
-•	kitti_to_yolo_v1.py - Convert Kitti label files to Yolo format
-•	Extract Predicted values.py - Extract Predicted values by feeding the neural network the images from KITTI dataset
-•	Evaluation Code.py - Code to calculate IoU and Average Precision    
-•	Images Folder - Images from results obtained 
+•	kitti_to_yolo_v1.py - Convert Kitti label files to Yolo format.
+•	Extract Predicted values.py - Extract Predicted values by feeding the neural network the images from KITTI dataset.
+•	Evaluation Code.py - Code to calculate IoU and Average Precision.    
+•	Images Folder - Images from results obtained. 
  
 ## Abstract
 Object detection is one of the most vital components in the Automotive sector. It can be used for various applications like Automotive safety, Autonomous driving and so on. Hence, various object detecting models have been developed over the years. One such model is the YOLOv3 which has been developed using the concepts of neural network and deep learning. But once this model is developed, it cannot be directly used in real life applications. The model needs to be evaluated by feeding it datasets containing images with known objects and check the accuracy of detection.  In this project we are trying to evaluate the convolutional neural network YOLOv3 object detector pre trained on COCO dataset. We are trying calculate the precision with which the pre trained YOLOv3 model can detect objects when a completely new dataset is provided to it.  Therefore, this evaluation is done using KITTI dataset for three classes of objects namely Cars, Pedestrians and Trucks. The evaluation is carried out on PyCharm using Python and OpenCV library
