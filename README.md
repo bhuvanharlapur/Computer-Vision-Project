@@ -168,4 +168,19 @@ Truck   	 | 9.87                	| 68	                	 | 608       				  | 215	
 
 If we look at the results closely the Average Precision values apart from that of the Car class are very low for both Truck and Pedestrians. Hence, this evaluation was conducted for only three classes as the Average Precision values for the rest of the classes of KITTI dataset were quite negligible. The YOLOv3 model trained on COCO dataset but when chosen to evaluate on KITTI dataset does well in recognising Car objects but falters with other class of objects. We have evaluated the model on IoU method, but there are many different methods like Centre point Comparison method which may have given different results. Looking at the KITTI leader board we see that there are better models which detect Cars, Pedestrians and Trucks with better results than YOLOv3 (Urtasun, 2012). Hence, we can say the object detector needs to be probably trained well and also the evaluation algorithm could be improvised for better evaluation results. Because in the current situation using this model in real life applications for detection of objects like Cars, Pedestrians, Truck etc would not be the best idea.
 
+## References
+
+Andreas Geiger, P. L. (2013). Vision meets Robotics: The KITTI Dataset. Karlsruhe, Deutschland: International Journal of Robotics Research. Retrieved June 21, 2020, from http://www.cvlibs.net/publications/Geiger2013IJRR.pdf
+
+Berens, F. (2019, December). INTRODUCTION TO LIDAR AND KITTI. (Course Material of LIDAR AND RADAR SYSTEMS). Retrieved May 2020
+
+Farhadi, J. R. (2018). YOLOv3: An Incremental Improvement. arXiv. Retrieved from https://pjreddie.com/darknet/yolo/
+
+Joseph Redmon, S. D. (2016). You Only Look Once:Unified, Real-Time Object Detection. arXiv:1506.02640v5 [cs.CV]. Retrieved from https://arxiv.org/pdf/1506.02640.pdf
+
+RafaelPadilla. (2020). Object-Detection-Metrics. Retrieved June 2020, from Github repo: https://github.com/rafaelpadilla/ObjectDetection-Metrics
+
+Urtasun, A. G. (2012). "Are we ready for Autonomous Driving? The KITTI Vision Benchmark Suite". Retrieved June 2020, from Conference on Computer Vision and Pattern Recognition (CVPR): http://www.cvlibs.net/datasets/kitti/eval_object.php?obj_benchmark=2d
+
+
 
