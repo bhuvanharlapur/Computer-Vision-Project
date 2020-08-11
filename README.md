@@ -48,44 +48,80 @@ To find out the area under the curve used the following method has been used.
 
 GTB- Ground truth boxes and PB- Predicted Boxes
    
-   *Initialize a 2-D array of 7000X9 for calculating precision and recall to zero*    
+   *Initialize a 2-D array of 7000X9 for calculating precision and recall to zero*
+   
         *FOR the length of no. of Images (1500 in my case)*
+		
                *IF GTB for an image is not 0*
+			   
                       *For the length of no. of GTB*
+					  
                               *For the length of no. of PB*
+							  
                                        *Calculate area of Intersection*
+									   
                                        *Calculate area of the union of two boxes* 
+									   
                                        *Calculate Intersection over union (IoU)*
+									   
                                       *Initialize the IoU to another 2D array*
+									  
                    *For the length of the PB (column)*
-                                 *Find the maximum ratio across the column and also the row value at*
-                                 *which it is maximum.*
+				   
+                                 *Find the maximum ratio across the column and also the row value at which it is maximum.*
+                                 
                                       *IF ratio >0.5 (IoU)*
+									  
                                            *Find the maximum across the row value*
+										   
                                           *IF the maximum in the row value==maximum in column*
-                                              *TP=1
+										  
+                                              *TP=1*
+											  
                                                *FP=0*
+											   
                                              *Initialize relevant information like Image Name, Class Name,*
-                                            *Confidence Score, TP and FP to the 2D array*                 
+											 
+                                            *Confidence Score, TP and FP to the 2D array* 
+											
                                          *Else*    
+										 
                                               *TP=0*
+											  
                                               *FP=1*
+											  
                                              *Initialize relevant information like Image Name, Class Name,*
+											 
                                             *Confidence Score TP and FP to the 2D array*
+											
                                     *IF the ratio<0.5 (IoU)*
+									
                                           *TP=0*
+										  
                                           *FP=1*
+										  
                                           *Initialize relevant information like Image Name, Class Name,*
+										  
                                          *Confidence Score TP and FP to the 2D array*
+										 
            *Sort the 2D array in descending w.r.t confidence score.*
+		   
         *FOR the length of no. of rows of the sorted 2D array*
-                          *Calculate Accumulated TP* 
+		
+                          *Calculate Accumulated TP*
+						  
                           *Calculate Accumulated FP*
+						  
                           *Calculate Precision with the formula (Accumulated True Positives)/(Accumulated TP+Accumulated FP)*
+						  
                          *Initialize the Accumulated TP, Accumulated FP and Precision to the 2D array* 
+						 
            *FOR the length of no. of rows of the sorted 2D array*
-                          *Calculate Recall with the formula  (Accumulated True Positives)/(Final Accumulated TP+Final Accumulated FP)*   
+		   
+                          *Calculate Recall with the formula  (Accumulated True Positives)/(Final Accumulated TP+Final Accumulated FP)* 
+						  
                          *Initialize the Accumulated TP, Accumulated FP and Precision to the 2D array*
+						 
 *Initialize all precision and recall values from the 2D array to two different 1-Darray. With these Precision and Recall values we calculate Average Precision using All point interpolation method. 
 
 Repeat the same logic for all the selected classes
