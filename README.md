@@ -126,6 +126,17 @@ GTB- Ground truth boxes and PB- Predicted Boxes
 
 Repeat the same logic for all the selected classes
 
+
+## Results and Discussion 
+
+Using the above algorithm, the code was run for 1500 images, with IoU threshold being 0.5, no. of True Positives and False Positives, Precision v/s Recall curve and the Average precision was calculated for all the selected classes namely Cars, Pedestrians and Trucks. Using Average Precision per class we calculated Mean Average Precision(mAP) to be 32.59%   
+
+Class Name	 | Average Precision    | No. of True Positives      | No. of False Poistives     | No. of Ground Truth boxes    | No. Predicted Boxes |
+:---: 		 | :---         	    | :---                       | :---            			  | :--- 	                     | :---				   |
+Car   		 | 60.21       	    	| 4035                		 | 3056      				  | 5583                   		 |7091				   |
+Pedestrian   | 27.68				| 338                		 | 443     					  | 893                      	 |781				   |
+Truck   	 | 9.87                	| 68	                	 | 608       				  | 215							 |676				   |
+
 	
 	
 
