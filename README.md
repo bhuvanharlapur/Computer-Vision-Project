@@ -27,12 +27,7 @@ Average precision can be calculated using the following method.
 
 Intersection over union is based on Jaccard Index. Here, we require both predicted bounding box and ground truth box, intersection over union of the area of both these boxes are calculated. This ratio is nothing but Intersection over Union or IoU. Once we calculate the IoU we proceed to understand whether the detection is valid or not by calculating/assigning True Positives or False Positives with respect to the IoU. If IoU is greater than a certain set threshold then the detection is True Positive else it is False Positive. In the first figure given below there is a small amount of intersection between the Red Box (Ground truth) and Blue Box (Predicted Box) hence the IoU is greater than 0. In the send figure the IoU is equal to 0 as there is no area of intersection. In the third figure there the ground truth box is completely intersected in the predicted  box but as we take the ratio, IoU is greater than 0 but less than 1. Hence, even if there is an intersection as given in third figure, the IoU still needs to be greater than the threshold and such intersection may still not be considered true positive.    
  
-<img src="Images/IoU.png">
-
-
-   0<IoU<1                                      IoU=0                                    0<IoU<1
-(Berens, 2019)                               (Berens, 2019)                           (Berens, 2019)      
-
+<img src="Images/IoU.png">      
 
 <br />
 
