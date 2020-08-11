@@ -48,7 +48,7 @@ To find out the area under the curve used the following method has been used.
 
 GTB- Ground truth boxes and PB- Predicted Boxes
    
-   *Initialize a 2-D array of 7000X9 for calculating precision and recall to zero*
+		*Initialize a 2-D array of 7000X9 for calculating precision and recall to zero*
    
         *FOR the length of no. of Images (1500 in my case)*
 		
@@ -122,7 +122,7 @@ GTB- Ground truth boxes and PB- Predicted Boxes
 						  
                          *Initialize the Accumulated TP, Accumulated FP and Precision to the 2D array*
 						 
-*Initialize all precision and recall values from the 2D array to two different 1-Darray. With these Precision and Recall values we calculate Average Precision using All point interpolation method.* 
+		*Initialize all precision and recall values from the 2D array to two different 1-Darray. With these Precision and Recall values we calculate Average Precision using All point interpolation method.* 
 
 Repeat the same logic for all the selected classes
 
