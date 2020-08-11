@@ -29,6 +29,11 @@ Intersection over union is based on Jaccard Index. Here, we require both predict
  
 <img src="Images/IoU.png">
 
+
+   0<IoU<1                                      IoU=0                                    0<IoU<1
+(Berens, 2019)                               (Berens, 2019)                           (Berens, 2019)      
+
+
 <br />
 
 Once the no. of True positive’s and False positives are found out, Precision and Recall have to be calculated.
